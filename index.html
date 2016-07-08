@@ -1,3 +1,24 @@
-<h3>
-Heading for index.html
-</h3>
+<head>
+<script type="text/javascript">
+function doNeed(){
+print(document.getElementById("type").value);
+}
+</script>
+</head>
+<body>
+<div>
+                        
+						 <form onSubmit="doNeed()">
+								<label>Operation Type:</label>
+								<select name="type" id="type">
+									<option value="GET">GET</option>
+									<option value="POST">POST</option>
+									<option value="PUT">PUT</option>									
+								</select>
+												
+                               <label>Text to append to url:</label>
+							   <input type="text" name="urlValue" id="urlValue">
+							   <input type="submit" value="Submit">
+						 </form>
+</div>
+</body>
